@@ -5,13 +5,11 @@ using System.Windows.Input;
 
 namespace mause_
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
+ 
     public partial class MainWindow : Window
     {
-        public double screenWidth = SystemParameters.PrimaryScreenWidth; // Ширина экрана
-        public double screenHeight = SystemParameters.PrimaryScreenHeight; // Высота экрана
+        public double screenWidth = SystemParameters.PrimaryScreenWidth; 
+        public double screenHeight = SystemParameters.PrimaryScreenHeight; 
 
         public MainWindow()
         {
@@ -32,7 +30,6 @@ namespace mause_
 
         private void PlayRandomSoundButton_Click()
         {
-            // Массив доступных системных звуков
             Action[] systemSounds = new Action[]
             {
                 () => SystemSounds.Asterisk.Play(),
@@ -42,11 +39,9 @@ namespace mause_
                 () => SystemSounds.Question.Play()
             };
 
-            // Генерация случайного индекса
             var random = new Random();
             int randomIndex = random.Next(systemSounds.Length);
 
-            // Воспроизведение случайного звука
             systemSounds[randomIndex]();
         }
     }

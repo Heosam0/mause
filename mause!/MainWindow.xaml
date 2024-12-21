@@ -11,6 +11,5 @@
         Title="mouse :3" Height="400" Width="400">
     <Grid>
         <Image Source="/rat_mouse_PNG23538.png" Stretch="Fill" MouseDown="Image_MouseDown" Margin="2,0,0,44"/>
-
     </Grid>
 </Window>
