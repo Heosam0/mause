@@ -1,0 +1,16 @@
+﻿<Window x:Class="mause_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mause_"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStyle="None"
+        Title="mouse :3" Height="400" Width="400">
+    <Grid>
+        <Image Source="/rat_mouse_PNG23538.png" Stretch="Fill" MouseDown="Image_MouseDown" Margin="2,0,0,44"/>
+
+    </Grid>
+</Window>
